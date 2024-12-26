@@ -44,7 +44,7 @@ void downloadFile(string link, string filename, bool followredir) {
     if(followredir) curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, output_file);
     curl_easy_setopt(curl, CURLOPT_COOKIEFILE, "");
-    curl_easy_setopt(curl, CURLOPT_COOKIELIST, "Set-Cookie: AUTHORIZATION=Bearer AIzaSyC8t5-dbdzCeF2eA0nV6KF8uMqos8fGfjc");
+    curl_easy_setopt(curl, CURLOPT_COOKIELIST, "Set-Cookie: AUTHORIZATION=Bearer REDACTED");
     curl_easy_setopt(curl, CURLOPT_VERBOSE, false);
 
     
